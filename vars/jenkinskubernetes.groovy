@@ -12,6 +12,10 @@ environment {
 		
 	agent { label 'slave1' }
 	
+	triggers {
+		pollSCM '* * * * *'
+	}
+
 	stages {
 		stage("POLL SCM"){
 			steps {
