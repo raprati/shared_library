@@ -10,7 +10,7 @@ environment {
 		gitCredId = "${gitcred}"
 	}
 		
-	agent { label 'slave1' }
+	agent { label 'k8s' }
 	
 	triggers {
 		pollSCM '* * * * *'
